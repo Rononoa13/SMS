@@ -13,6 +13,7 @@
     <script>
     $(document).ready( function () {
       $('#example').DataTable();
+
     });
 
 
@@ -70,7 +71,7 @@
           <div class="col-md-12">
             <h1>Data Tables </h1>
           </div>
-          <table id="example" class="table table-striped table-bordered" style="width:100%">
+          <table id="example" class="table table-striped table-bordered display" style="width:100%">
         <thead>
             <tr>
                 <th>S.N</th>
@@ -113,8 +114,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-target="#editModal" data-toggle="modal">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm" data-target="#editModal" data-toggle="modal">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                   <!-- Modals -->
 
                   <div class="modal" id="editModal" tabindex="-1">
@@ -129,8 +130,8 @@
                         <!-- Modal ko BOdy ko lagi -->
                         <div class="modal-body">
                           <div class='col-sm-6'>
-                            <div class="input-group date fj-date">
-                               Date: <input type="text" class="form-control"><span class="input-group-addon">
+                            <div class="input-group date fj-date"> Date:
+                               <input type="text" class="form-control"><span class="input-group-addon">
                           <span class="glyphicon glyphicon-calendar"></span></span>
                             </div>
                           </div>
@@ -182,8 +183,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                 </td>
                 <td>$320,800</td>
             </tr>
@@ -195,8 +196,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                 </td>
                 <td>$320,800</td>
             </tr>
@@ -231,8 +232,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                 </td>
                 <td>$90,560</td>
             </tr>
@@ -243,8 +244,8 @@
               <td><span class="badge badge-danger">Incomplete</span></td>
               <td>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <button type="button" class="btn btn-primary btn-sm">Delete</button>
               </td>
               <td>$320,800</td>
             </tr>
@@ -260,11 +261,11 @@
               <td>014</td>
               <td>Sales Assistant</td>
               <td>San Francisco</td>
-              <td><span class="badge badge-danger">Incomplete</span></td>
+              <td><span class="badge badge-danger ">Incomplete</span></td>
               <td>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <button type="button" class="btn btn-primary btn-sm">Delete</button>
               </td>
               <td>$320,800</td>
             </tr>
@@ -291,8 +292,8 @@
               <td><span class="badge badge-danger">Incomplete</span></td>
               <td>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <button type="button" class="btn btn-primary btn-sm">Delete</button>
               </td>
               <td>$320,800</td>
             </tr>
@@ -319,8 +320,8 @@
               <td><span class="badge badge-danger">Incomplete</span></td>
               <td>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                <button type="button" class="btn btn-primary btn-sm">Delete</button>
               </td>
               <td>$320,800</td>
             </tr>
@@ -339,8 +340,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                 </td>
                 <td>$675,000</td>
             </tr>
@@ -351,8 +352,8 @@
                 <td><span class="badge badge-danger">Incomplete</span></td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary">Edit</button>
-                  <button type="button" class="btn btn-primary">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm">Delete</button>
                 </td>
                 <td>$106,450</td>
             </tr>
@@ -380,6 +381,16 @@
                 <td>2011/04/25</td>
                 <td>$92,575</td>
             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Progress</th>
+                <th>Execution date</th>
+                <th>Salary</th>
+            </tr>
 
         </tfoot>
     </table>
@@ -398,7 +409,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="js/bootstrap.min.js">
 
+    </script>
 
   </body>
 </html>
