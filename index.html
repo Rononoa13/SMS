@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" href="javascript/app.js"></script>
+    <script>
+    $(document).ready( function () {
+      $('#example').DataTable();
+    });
+
+
+    </script>
+
+
+
+
+    <title>Sajilo Marmat Sewa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+  </head>
+
+  <body>
+<!-- Nav bar -->
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="active">
+                      <a class="nav-link scroll-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Price</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Login/Register</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Nav bar End-->
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Data Tables </h1>
+          </div>
+          <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Progress</th>
+                <th>Execution date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-target="#editModal" data-toggle="modal">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                  <!-- Modals -->
+
+                  <div class="modal" id="editModal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+
+                        <!-- Modal ko Header ko lagi -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Edit Your Service</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal ko BOdy ko lagi -->
+                        <div class="modal-body">
+                          <div class='col-sm-6'>
+                            <div class="input-group date fj-date">
+                               Date: <input type="text" class="form-control"><span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+                        <!-- Modal ko Footer ko lagi -->
+                        <div class="modal-footer">
+                          <button type="button" id="confirm_click" class="btn btn-primary">Confirm</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+
+                        </div>
+
+
+                      </div>
+
+                      </div>
+
+                    </div>
+                    <!-- -->
+
+                    <!-- -->
+
+
+                  </div>
+
+
+
+
+
+                  <!-- Modals -->
+                </td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+              <td>005</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>008</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>009</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>010</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>011</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </td>
+                <td>$90,560</td>
+            </tr>
+            <tr>
+              <td>012</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td><span class="badge badge-danger">Incomplete</span></td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>013</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>014</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td><span class="badge badge-danger">Incomplete</span></td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>015</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td><span class="badge badge-danger">Incomplete</span></td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td><span class="badge badge-danger">Incomplete</span></td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td><span class="badge badge-success">Success</span></td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </td>
+                <td>$675,000</td>
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td><span class="badge badge-danger">Incomplete</span></td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary">Edit</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </td>
+                <td>$106,450</td>
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2011/04/25</td>
+                <td>$85,600</td>
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2011/04/25</td>
+                <td>$1,200,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Joyce</td>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td><span class="badge badge-success">Success</span></td>
+                <td>2011/04/25</td>
+                <td>$92,575</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+
+        </div>
+      </div>
+
+    </header>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+  </body>
+</html>
