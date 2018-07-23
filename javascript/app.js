@@ -10,7 +10,3 @@ $("#confirm_click").on("click",function(){
   console.log("click");
 
 });
-
-$('.fj-date').datepicker({
-  format: "dd/mm/yyyy"
-});
