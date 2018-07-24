@@ -17,6 +17,7 @@ body {
 .profile-sidebar {
   padding: 20px 0 10px 0;
   background: #fff;
+  min-height: 433px;
 }
 
 .profile-userpic img {
@@ -109,10 +110,21 @@ body {
 .profile-content {
   padding: 20px;
   background: #fff;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 body {
   padding : 10px ;
 
+}
+
+.form-group {
+    padding-right: 30px;
+    margin-bottom: 2rem;
+    padding-left: 30px;
+    margin-top: 2rem;
+}
+
+#submit{
+  padding-left: 35px;
 }
