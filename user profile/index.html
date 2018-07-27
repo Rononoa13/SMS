@@ -70,14 +70,20 @@
           <!-- END SIDEBAR USER TITLE -->
           <!-- SIDEBAR BUTTONS -->
           <div class="profile-userbuttons">
-            <button type="button" class="btn btn-success btn-sm">Book Now</button><br>
-
+            <button id="book_now" type="button" class="btn btn-success btn-sm">Book Now</button><br>
           </div>
+
+
+
+
+          
+
+
           <!-- END SIDEBAR BUTTONS -->
           <!-- SIDEBAR MENU -->
 
           <!-- Nav pills -->
-          <div class="profile-usermenu">
+        <!--  <div class="profile-usermenu">
             <ul class="nav nav-pills flex-column">
               <li class=" nav-item ">
                 <a class="nav-link active" data-toggle="pill" href="#Overview">
@@ -87,15 +93,15 @@
                 <a href="#Ratings" class="nav-link" data-toggle="pill">
 
 							Ratings </a>
-              </li>
+            </li>
 
-            </ul>
+            </ul> -->
             <!-- Tab panes -->
-            <div class="tab-content">
+      <!--      <div class="tab-content">
               <div role="tabpanel" class="tab-pane fade in active" id="Overview">...</div>
               <div role="tabpanel" class="tab-pane fade" id="Ratings">Ratings</div>
             </div>
-          </div>
+          </div> -->
 
           <!-- END MENU -->
         </div>
@@ -103,15 +109,20 @@
 
       <div class="col-md-9">
         <div class="profile-content">
-          <h4>Shyam Krishna</h4>
+          <h4>Overview: </h4>
           <b> Area of Expertise:</b>
           <p>Installation of electrical system, new wiring and troubleshooting critical problems</p>
-          <h5>Average Rating</h5>
+
+          <h5 >Average Rating</h5>
+          <div class="star-rating" id="rate">
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span
+          <span class="fa fa-star"></span>
+
+        </div>
+
           <div class="well">
             <table class="table table-bordered table-striped">
               <tr>
@@ -120,7 +131,7 @@
                 <th>Description</th>
               </tr>
               <tr>
-                <td>Leapforg</td>
+                <td>Leapfrog</td>
                 <td>Electrician</td>
                 <td>Fixed Electicity in Leapfrog </td>
               </tr>
@@ -149,7 +160,7 @@
       <div class="form-group">
         <textarea class="form-control" rows="3" cols="50" required></textarea>
       </div>
-      <button type="submit" class="btn btn-success ">Submit</button>
+      <button  id="submit_button"  type="submit" class="btn btn-success btn-submit">Submit</button>
     </form>
     <br><br>
 
