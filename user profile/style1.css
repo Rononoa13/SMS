@@ -149,6 +149,7 @@ body {
 .right_float{
   float: right;
 }
-.lft_star{
-  margin-bottom: 15px;
-}
+/* .lft_star{
+  padding: 0; 
+  margin:0;
+} */
