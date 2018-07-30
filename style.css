@@ -14,7 +14,9 @@ body{
   border:0 !important;
   padding-left: 100px;
   padding-right: 50px;
-
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 .navbar-brand{
   float: left;
