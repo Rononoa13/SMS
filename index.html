@@ -7,16 +7,11 @@
 
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.semanticui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js">  </script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-
-    </script>
-
-
-
-    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    
     <title>Sajilo Marmat Sewa</title>
 
     <!-- Bootstrap core CSS -->
@@ -24,8 +19,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
     <!-- CSS -->
 
   </head>
@@ -74,20 +70,20 @@
     <!-- Header -->
     <header id="header">
       <table id="example" class="table table-striped table-bordered display" style="width:100%">
-        <thead>
+        <thead >
             <tr>
-                <th>S.N</th>
+                <th>Code</th>
                 <th>Service Type</th>
                 <th>Technician Assigned</th>
                 <th>Status</th>
-                <th>Execution date</th>
+                <th>Schedule date</th>
                 <th>Cost</th>
             </tr>
         </thead>
         <tbody>
 
             <tr>
-                <td>001</td>
+                <td>008257</td>
                 <td>Plumbing work</td>
                 <td>Raj Bahadur Rokaya</td>
                 <td><span class="badge badge-success">Complete</span></td>
@@ -96,16 +92,16 @@
             </tr>
 
             <tr>
-              <td>002</td>
+              <td>002587</td>
               <td>Electrical work</td>
-              <td>System Architect</td>
+              <td>Bahadur Raj Shrestha</td>
               <td><span class="badge badge-success">Complete</span></td>
               <td>2011/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
             <tr>
-              <td>003</td>
+              <td>003281</td>
               <td>Electrical work</td>
               <td>Asharam Chaudhary</td>
               <td><span class="badge badge-success">Complete</span></td>
@@ -114,7 +110,7 @@
             </tr>
 
             <tr>
-              <td>004</td>
+              <td>008257</td>
               <td>Plumbing work</td>
               <td>Niranjan shau</td>
               <td><span class="badge badge-success">Complete</span></td>
@@ -123,75 +119,67 @@
             </tr>
 
             <tr>
-                <td>005</td>
+                <td>008257</td>
                 <td>Electrician Appliance</td>
                 <td>Khursid Alam</td>
-                <td><span class="badge badge-warning">On Progress</span></td>
-                <td>
+                <td><span class="badge badge-warning">In Progress</span></td>
+                <td>2011/04/25
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-sm" data-target="#editModal" data-toggle="modal">Edit</button>
-                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
-                  <!-- Modals -->
-
-
-
-
-
-
-
-                  <!-- Modals -->
+                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                  
+                  <!-- Modals --> <!-- Modals -->
                 </td>
                 <td>N/A</td>
             </tr>
 
             <tr>
-                <td>006</td>
+                <td>008257</td>
                 <td>Plumbing Work</td>
                 <td>Raj Bahadur Rokaya</td>
-                <td><span class="badge badge-warning">On Progress</span></td>
-                <td>
+                <td><span class="badge badge-warning">In Progress</span></td>
+                <td>2013/04/15
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                  
                 </td>
                 <td>N/A</td>
             </tr>
             <tr>
-                <td>007</td>
+                <td>009219</td>
                 <td>Plumbing Supervisor</td>
                 <td>Bijay Prakash Awal</td>
 
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>
+                <td>2014/04/25
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                 
                 </td>
                 <td>N/A</td>
             </tr>
 
 
             <tr>
-                <td>008</td>
+                <td>008275</td>
                 <td>Electic Supervisor</td>
                 <td>Nabin Chaulagain</td>
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>
+                <td>2015/04/25
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                  <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                  
                 </td>
                 <td>N/A</td>
             </tr>
             <tr>
-              <td>009</td>
+              <td>009219</td>
               <td>Computer Hardware</td>
               <td>Sambhu Prasad Adhakari</td>
               <td><span class="badge badge-danger">Pending</span></td>
-              <td>
+              <td>2013/02/13
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                
               </td>
               <td>N/A</td>
             </tr>
