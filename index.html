@@ -7,10 +7,13 @@
 
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="clockface.css">
+    
     
     <title>Sajilo Marmat Sewa</title>
 
@@ -83,21 +86,14 @@
         </thead>
         <tbody>
 
-            <tr>
-                <td>008257</td>
-                <td>Plumbing work</td>
-                <td>Raj Bahadur Rokaya</td>
-                <td><span class="badge badge-success">Complete</span></td>
-                <td>2009/01/12</td>
-                <td>Rs. 86,000</td>
-            </tr>
+            
 
             <tr>
               <td>002587</td>
               <td>Electrical work</td>
               <td>Bahadur Raj Shrestha</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2017/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -106,7 +102,7 @@
               <td>Electrical work</td>
               <td>Asharam Chaudhary</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2017/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -115,7 +111,7 @@
               <td>Plumbing work</td>
               <td>Niranjan shau</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2018/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -124,25 +120,58 @@
                 <td>Electrician Appliance</td>
                 <td>Khursid Alam</td>
                 <td><span class="badge badge-warning">In Progress</span></td>
-                <td>2011/04/25
+                <td>2017/04/25
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="float: right">Edit</button>
                   
-                  <!-- Modals -->
+                  
                       <!-- Modal -->
                       <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog">
                           <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
+                              <h4 class="modal-title">Edit Date</h4>
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Modal Header</h4>
+      
                             </div>
                             <div class="modal-body">
-                              <p>Some text in the modal.</p>
+                                <div class="row" id="row1">
+                                    <div class="col-md-3">
+                                      <h5>Date:</h5>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                                          <input class="datepicker" type="text" name="date" placeholder="MM/DD/YYYY"> 
+                                          
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Time:</h5>
+                                      </div>
+                                    <div class="col-md-7">
+                                        
+                                        <div class="input-group date" id="time_edit" data-target-input="nearest">
+                                           
+                                            <input type="text" id="t1" value="2:30 PM" class="form-control input-small" placeholder="11:00 AM" >
+                                            
+                                        </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                        <h5>Message:</h5>
+                                      </div>
+                                       <div class="form-group">
+                                        
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" cols="45"></textarea>
+                                      </div>
+                                    
+                                  </div>
+                              
+                              
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
                             </div>
                            </div>
                           </div>
@@ -157,7 +186,7 @@
                 <td>Plumbing Work</td>
                 <td>Raj Bahadur Rokaya</td>
                 <td><span class="badge badge-warning">In Progress</span></td>
-                <td>2013/04/15
+                <td>2018/04/15
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                   
@@ -170,7 +199,7 @@
                 <td>Bijay Prakash Awal</td>
 
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>2014/04/25
+                <td>2018/04/25
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                  
@@ -184,25 +213,14 @@
                 <td>Electic Supervisor</td>
                 <td>Nabin Chaulagain</td>
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>2015/04/25
+                <td>2017/04/25
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                   
                 </td>
                 <td>N/A</td>
             </tr>
-            <tr>
-              <td>009219</td>
-              <td>Computer Hardware</td>
-              <td>Sambhu Prasad Adhakari</td>
-              <td><span class="badge badge-danger">Pending</span></td>
-              <td>2013/02/13
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
-                
-              </td>
-              <td>N/A</td>
-            </tr>
+           
 
 
 
@@ -290,9 +308,21 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-
+    <script src="javascript/clockface.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="javascript/app.js"></script>
     <script src="js/main.js"></script>
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
+    <script>
+      $(function(){
+        $('.datepicker').datepicker();
+      });
+    </script>
+    <script>
+      $(function(){
+      $('#t1').clockface();  
+  });
+    </script>
+    
   </body>
 </html>
